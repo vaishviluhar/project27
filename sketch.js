@@ -1,3 +1,4 @@
+const Constraint = Matter.Constraint
 const Engine = Matter.Engine;
 const World = Matter.World;
 const Bodies = Matter.Bodies;
@@ -47,11 +48,11 @@ function draw() {
   bobObj1.display();
   bobObj2.display();
   bobObj3.display();
-  bobOnj4.display();
+  bobObj4.display();
   bobObj5.display();
 
   rope1.display();
-  rope2.diplsay();
+  rope2.display();
   rope3.display();
   rope4.display();
   rope5.display();
