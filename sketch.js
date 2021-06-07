@@ -17,25 +17,26 @@ function preload()
 function setup() {
 	createCanvas(400, 400);
 
-	engine = Engine.create();
-	world = engine.world;
+ engine = Engine.create();
+ world = engine.world;
 
-	//Create the Bodies Here.
-    roof = new Roof(200, 10, 400, 400);
+//Create the Bodies Here.
+ roof = new Roof(200,100,300,10); 
 
-	bobObj1 = new Bob(20, 200, 20);
-	bobObj2 = new Bob(45, 200, 20);
-	bobObj3 = new Bob(70, 200, 20);
-	bobObj4 = new Bob(95, 200, 20);
-	bobObj5 = new Bob(120, 200, 20);
+ bobObj1 = new Bob(300, 300, 20); 
+ bobObj2 = new Bob(350, 300, 20); 
+ bobObj3 = new Bob(400, 300, 20);
+ bobObj4 = new Bob(450, 300, 20); 
+ bobObj5 = new Bob(500, 300, 20); 
 
-	rope1 = new Rope(bobObj1.body, roof.body, -bobDiameter*2, 0);
-	rope2 = new Rope(bobObj2.body, roof.body, -bobDiameter*2, 0);
-	rope3 = new Rope(bobObj3.body, roof.body, -bobDiameter*2, 0);
-	rope4 = new Rope(bobObj4.body, roof.body, -bobDiameter*2, 0);
-	rope5 = new Rope(bobObj5.body, roof.body, -bobDiameter*2, 0);
+ rope1 = new Rope(bobObj1.body, roof.body, -40, 0); 
+ rope2 = new Rope(bobObj2.body, roof.body, -10, 0); 
+ rope3 = new Rope(bobObj3.body, roof.body, 30, 0); 
+ rope4 = new Rope(bobObj4.body, roof.body, 70, 0); 
+ rope5 = new Rope(bobObj5.body, roof.body, 120, 0);
 
-	Engine.run(engine);
+
+ Engine.run(engine);
   
 }
 
